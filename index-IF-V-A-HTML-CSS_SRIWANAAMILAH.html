@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Learning Project</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Times New Roman", serif;
+            line-height: 1.7;
+            color: #2b1d17;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #46352d; /*DIUBAH: Warna background luar */
+        }
+        header {
+            background-color: #d9c3b0;
+            border: 2px solid #5a4a4a;
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            margin-bottom: 5px;
+            color: #b85042;
+        }
+
+        .subtitle {
+            font-size: 1.15rem;
+            color: #8c7b75;
+            margin-top: 0;
+        }
+
+        section {
+            background-color: #d9c3b0;
+            border: 2px solid #5a4a4a;
+            border-radius: 20px;            
+            padding: 40px;                  
+            margin-bottom: 30px;            
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04); 
+        }
+
+        h2 {
+            color: #b85042;
+            font-size: 1.6rem;
+            border-bottom: 2px dashed #f0e6df;
+            padding-bottom: 12px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: #b85042;
+            margin-top: 25px;
+            font-size: 1.2rem;
+        }
+
+        pre {
+            background: #faf7f2;
+            border: 1px solid #f0e6df;
+            border-radius: 12px;
+            padding: 16px;
+            overflow-x: auto;
+            line-height: 1.45;
+        }
+
+        code {
+            font-family: Consolas, "Courier New", monospace;
+            color: #355c7d
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0 ;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            border: 1px solid #f0e6df;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #fceade;
+            color: #b85042;
+        }
+
+        .example-box {
+            
+            border: 1px solid #f0e6df;
+            padding: 24px;
+            border-radius: 16px;
+            margin: 20px 0;
+        }
+
+        .muted {
+            color: #8c7b75;
+            font-style: italic;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #dcd6d0;
+            border-radius: 10px;
+            background-color: #fff;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            font-family: inherit;
+        }
+
+        button[type="submit"] {
+            background-color: #a34438;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #a34438;
+        }
+
+        footer {
+            background-color: #d9c3b0;
+            border: 2px solid #5a4a4a;
+            border-radius: 20px;
+            margin-top: 40px;
+            padding: 25px;
+            text-align: center;
+            color: #8c7b75;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌐 HTML Learning Project</h1>
+        <p class="subtitle">Master the Building Blocks of the Web</p>
+        <hr style="border: none;
+        border-top: 1px solid #f0e6df;
+        margin-top: 15 px;">
+    </header>
+
+    <main>
+
+        <section>
+            <h2>🚀 What is HTML?</h2>
+
+            <p>
+                <strong>HTML (HyperText Markup Language)</strong> is the
+                standard markup language for creating web pages.
+                Think of it as the skeleton or foundation of every
+                website you visit.
+            </p>
+
+            <h3>Key Points</h3>
+
+            <ul>
+                <li>
+                    <strong>HyperText:</strong>
+                    Text with links to other texts.
+                </li>
+                <li>
+                    <strong>Markup:</strong>
+                    A way to annotate text to show structure and meaning.
+                </li>
+                <li>
+                    <strong>Language:</strong>
+                    A set of rules and syntax for creating web content.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🏗️ How HTML Works</h2>
+
+            <p>
+                HTML uses <strong>tags</strong> to define elements.
+                Tags are keywords surrounded by angle brackets,
+                like <code>&lt;tagname&gt;</code>.
+                Most tags come in pairs.
+            </p>
+
+            <pre><code>&lt;tagname&gt;Content goes here&lt;/tagname&gt;
+&lt;h1&gt;This is a heading&lt;/h1&gt;
+&lt;p&gt;This is a paragraph&lt;/p&gt;</code></pre>
+        </section>
+
+        <section>
+            <h2>📋 Basic HTML Structure</h2>
+
+            <p>
+                Every HTML document follows this basic structure:
+            </p>
+
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is my first paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+            <h3>Structure Breakdown</h3>
+
+            <ul>
+                <li>
+                    <code>&lt;!DOCTYPE html&gt;</code> —
+                    Tells the browser that the document uses HTML5.
+                </li>
+                <li>
+                    <code>&lt;html&gt;</code> —
+                    The root element of the page.
+                </li>
+                <li>
+                    <code>&lt;head&gt;</code> —
+                    Contains metadata that is not displayed directly
+                    on the page.
+                </li>
+                <li>
+                    <code>&lt;body&gt;</code> —
+                    Contains the visible content of the webpage.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🏷️ Essential HTML Tags</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Purpose</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code></td>
+                        <td>Headings, from largest to smallest</td>
+                        <td><code>&lt;h1&gt;Main Title&lt;/h1&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td>Creates a paragraph</td>
+                        <td><code>&lt;p&gt;This is text&lt;/p&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>Creates a hyperlink</td>
+                        <td><code>&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Displays an image</td>
+                        <td><code>&lt;img src="image.jpg" alt="Description"&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Groups content in a container</td>
+                        <td><code>&lt;div&gt;Content here&lt;/div&gt;</code></td>
+                    </tr>
+
+                    <tr>
+                        <td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td>
+                        <td>Creates lists and list items</td>
+                        <td><code>&lt;ul&gt;&lt;li&gt;Item&lt;/li&gt;&lt;/ul&gt;</code></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>🎯 Live Examples</h3>
+
+            <div class="example-box">
+                <h1 style="font-size: 2em;">This is an H1 heading</h1>
+
+                <h2>This is an H2 heading</h2>
+
+                <h3>This is an H3 heading</h3>
+
+                <p>
+                    This is a paragraph with
+                    <strong>bold text</strong> and
+                    <em>italic text</em>.
+                </p>
+
+                <p>
+                    Here's a
+                    <a href="#forms">sample link</a>
+                    to the forms section.
+                </p>
+
+                <h3>Unordered List</h3>
+
+                <ul>
+                    <li>First item</li>
+                    <li>Second item</li>
+                    <li>Third item</li>
+                </ul>
+
+                <h3>Ordered List</h3>
+
+                <ol>
+                    <li>Step one</li>
+                    <li>Step two</li>
+                    <li>Step three</li>
+                </ol>
+            </div>
+        </section>
+
+        <section id="forms">
+            <h2>📝 HTML Forms</h2>
+
+            <p>Forms allow users to enter and submit data.</p>
+
+            <h3>Example Code</h3>
+
+            <pre><code>&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+
+    &lt;label for="subject"&gt;Subject:&lt;/label&gt;
+    &lt;select id="subject" name="subject"&gt;
+        &lt;option&gt;Question&lt;/option&gt;
+        &lt;option&gt;Feedback&lt;/option&gt;
+        &lt;option&gt;Support&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;label for="message"&gt;Message:&lt;/label&gt;
+    &lt;textarea id="message" name="message"&gt;&lt;/textarea&gt;
+
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+            <h3>Example Form</h3>
+
+            <form onsubmit="event.preventDefault(); alert('This is a demo form. No data was sent.');">
+
+                <p>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name">
+                </p>
+
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+
+                <p>
+                    <label for="subject">Subject:</label><br>
+                    <select id="subject" name="subject">
+                        <option>Question</option>
+                        <option>Feedback</option>
+                        <option>Support</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </p>
+
+                <button type="submit">Submit Form</button>
+
+            </form>
+
+            <p class="muted">
+                Note: This is a demonstration form.
+                It does not send data to a server.
+            </p>
+        </section>
+
+        <section>
+            <h2>🎨 HTML Attributes</h2>
+
+            <p>
+                Attributes provide additional information about
+                HTML elements.
+            </p>
+
+            <pre><code>&lt;!-- Image attributes --&gt;
+&lt;img src="photo.jpg" alt="A beautiful sunset" width="300" height="200"&gt;
+
+&lt;!-- Link attributes --&gt;
+&lt;a href="https://example.com" target="_blank" title="Visit Example"&gt;Click here&lt;/a&gt;
+
+&lt;!-- Div attributes --&gt;
+&lt;div class="container" id="main-content" style="color: blue;"&gt;Content&lt;/div&gt;</code></pre>
+
+            <h3>Important Attributes</h3>
+
+            <ul>
+                <li>
+                    <strong><code>id</code></strong> —
+                    Gives an element a unique identifier.
+                </li>
+                <li>
+                    <strong><code>class</code></strong> —
+                    Groups elements for CSS styling.
+                </li>
+                <li>
+                    <strong><code>src</code></strong> —
+                    Specifies the source of an image or other media.
+                </li>
+                <li>
+                    <strong><code>href</code></strong> —
+                    Specifies the destination URL of a link.
+                </li>
+                <li>
+                    <strong><code>alt</code></strong> —
+                    Provides alternative text for an image.
+                </li>
+                <li>
+                    <strong><code>style</code></strong> —
+                    Applies inline CSS styling.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>📊 Tables in HTML</h2>
+
+            <p>
+                Tables organize information into rows and columns.
+            </p>
+
+            <h3>Example Code</h3>
+
+            <pre><code>&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Age&lt;/th&gt;
+            &lt;th&gt;City&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;New York&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+            <h3>Sample Table</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student</th>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>Mathematics</td>
+                        <td>A+</td>
+                        <td>Passed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>Physics</td>
+                        <td>B</td>
+                        <td>Passed</td>
+                    </tr>
+
+                    <tr>
+                        <td>Carol Davis</td>
+                        <td>Chemistry</td>
+                        <td>A</td>
+                        <td>Passed</td>
+                    </tr>
+                </tbody>
